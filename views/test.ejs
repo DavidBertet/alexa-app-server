@@ -48,7 +48,7 @@
           $scope.request.request.locale = $scope.locale;
           $scope.request.context.System.apiEndpoint = $scope.apiEndpoint;
 
-          if ($scope.locale === 'en-GB' || $scope.locale === 'de-DE') {
+          if ($scope.locale === 'en-GB' || $scope.locale === 'de-DE' || $scope.locale === 'fr-FR') {
             $scope.request.context.System.apiEndpoint = 'https://api.eu.amazonalexa.com/';
           } else {
             $scope.request.context.System.apiEndpoint = 'https://api.amazonalexa.com/';
@@ -200,6 +200,7 @@
           <option value="en-US">en-US</option>
           <option value="en-GB">en-GB</option>
           <option value="de-DE">de-DE</option>
+          <option value="fr-FR">fr-FR</option>
         </select>
       </div>
 
